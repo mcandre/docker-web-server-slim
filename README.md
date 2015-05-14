@@ -1,4 +1,4 @@
-# docker-web-server-slim - a slim Docker container running a continuous Apache server
+# docker-web-server-slim - a slim Docker container running a continuous Web server
 
 # DOCKER HUB
 
