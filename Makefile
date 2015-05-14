@@ -17,7 +17,7 @@ build: Dockerfile
 
 run: clean-containers build
 	docker run -d -p 80:80 $(IMAGE)
-	curl http://$(LOCALHOST) | head
+	curl -s http://$(LOCALHOST) | head
 	docker images | grep $(IMAGE) | awk '{ print $$(NF-1), $$NF }'
 
 clean-containers:

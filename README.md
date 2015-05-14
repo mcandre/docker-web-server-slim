@@ -17,10 +17,6 @@ $ make
 docker run -d -p 80:80 mcandre/docker-web-server-slim
 bee6f25b0210ab2c5ebd1200996597197cbeba75a510adbaded5a88821c6b24f
 curl http://$(boot2docker ip) | head
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100 11104  100 11104    0     0  4409k      0 --:--:-- --:--:-- --:--:-- 5421k
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
