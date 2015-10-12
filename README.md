@@ -16,7 +16,7 @@ docker-web-server-slim is a container for serving Web pages, made smaller with a
 $ make
 docker run -d -p 80:80 mcandre/docker-web-server-slim
 bee6f25b0210ab2c5ebd1200996597197cbeba75a510adbaded5a88821c6b24f
-curl http://$(boot2docker ip) | head
+curl http://$(docker-machine ip default) | head
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -54,8 +54,7 @@ $ sudo yum install docker-io curl
 ## non-Linux
 
 * [VirtualBox](https://www.virtualbox.org/)
-* [Vagrant](https://www.vagrantup.com/)
-* [boot2docker](http://boot2docker.io/)
+* [Docker Toolbox](https://www.docker.com/toolbox)
 
 ### Mac OS X
 
@@ -64,8 +63,7 @@ $ sudo yum install docker-io curl
 * [brew-cask](http://caskroom.io/)
 
 ```
-$ brew cask install virtualbox vagrant
-$ brew install boot2docker curl
+$ brew cask install dockertoolbox
 ```
 
 ### Windows
@@ -73,5 +71,7 @@ $ brew install boot2docker curl
 * [Chocolatey](https://chocolatey.org/)
 
 ```
-> chocolatey install docker curl make
+> chocolatey install virtualbox make
 ```
+
+* [DockerToolbox-1.8.2c.exe](https://github.com/docker/toolbox/releases/download/v1.8.2c/DockerToolbox-1.8.2c.exe)
