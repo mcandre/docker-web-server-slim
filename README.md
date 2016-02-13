@@ -38,6 +38,7 @@ docker images | grep mcandre/docker-web-server-slim | awk '{ print $(NF-1), $NF 
 
 * [curl](http://curl.haxx.se/)
 * [make](http://www.gnu.org/software/make/)
+* [Node.js](https://nodejs.org/en/) (for dockerlint)
 
 ## Debian/Ubuntu
 
